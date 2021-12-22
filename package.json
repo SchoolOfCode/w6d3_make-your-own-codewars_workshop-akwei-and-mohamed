@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "author": "School of Code",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "crossenv": "^0.0.2-security",
     "jest": "^27.4.5"
   }

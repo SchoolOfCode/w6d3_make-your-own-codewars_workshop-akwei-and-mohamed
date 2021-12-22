@@ -13,4 +13,11 @@ Negative numbers should return 0.
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-function solution(number) {}
+export function solution(number) {
+  let sum = 0;
+  if (number <= 0) return 0;
+  for (let currNum = 0; currNum < number; currNum++) {
+    if (currNum % 4 === 0 || currNum % 7 === 0) sum += currNum;
+  }
+  return sum;
+}
